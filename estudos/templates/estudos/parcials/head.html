@@ -157,5 +157,96 @@
       .search-form:focus-within .search-button{
         color: var(--color-primary);
       }
+
+      .main-content{
+        padding-top: 0;
+      }
+
+      .main-content-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: var(--spacing-gutter-large);
+      }
+
+      .temp{
+        height: 40rem;
+
+      }
+
+      .subject{
+        background-color: var(--color-white);
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
+        transition: all 300ms ease-in-out;
+        transform: scale(1);
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+
+      .subject img{
+        max-width: 100%;
+      }
+
+      .subject-list-item{
+        max-width: 64rem;
+      }
+
+      .subject:hover{
+        transform: scale(1.025);
+        box-shadow: -10px 10px 20px rgba(0, 0, 0, .3);
+
+      }
+
+      .subject-title-container{
+        padding: var(--spacing-gutter-medium);
+        padding-bottom: 2rem;
+      }
+
+      .subject-author{
+        padding: 0 var(--spacing-gutter-medium);
+      }
+
+      .subject-content{
+        padding: var(--spacing-gutter-medium);
+        padding: 2rem;
+      }
+
+      .subject-author-item{
+        color: var(--color-gray-4);
+      }
+
+      .subject-meta-container{
+        display: flex;
+        flex-flow: row wrap;
+        padding: var(--spacing-gutter-medium);
+        background-color: var(--color-gray-1);
+      }
+
+      .subject-meta{
+        display: flex;
+        flex-flow: column nowrap;
+        flex-shrink: 1;
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      .subject-meta-title{
+        font-size: 1.6rem;
+      }
+
+      .subject-footer a{
+        background-color: var(--color-primary-dark);
+        display: block;
+        flex-flow: row nowrap;
+        color: var(--color-white);
+        text-decoration: none;
+        text-align: center;
+        padding: 2.3rem var(--spacing-gutter-medium);
+        transition: all 300ms ease-in-out;
+      }
+
+      .subject-footer a:hover{
+        filter: brightness(2);
+      }
+
     </style>
 </head>
