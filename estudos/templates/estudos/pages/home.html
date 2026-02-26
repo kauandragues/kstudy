@@ -1,16 +1,9 @@
-{% include "estudos/parcials/head.html" %}
+<!doctype html>
+<html lang="pt-br">
+    {% include "estudos/parcials/head.html" %}
 
-<body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a class="main-logo" href="/">
-                    <i class="fa-solid fa-book main-logo-icon"></i>
-                     <span class="main-logo-text">Kstudy</span>
-                </a>
-            </h1>
-        </div>
-    </header>   
-</body>
-
+    <body>
+        {% include "estudos/parcials/header.html" %}
+        {% include "estudos/parcials/search.html" %}
+    </body>
 </html>
