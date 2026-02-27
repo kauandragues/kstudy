@@ -57,6 +57,7 @@ TEMPLATES = [
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
             BASE_DIR / "estudos" / "templates",
+            BASE_DIR / "base_templates",
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -118,6 +119,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = "static/"
+
+# Static files global - aprendendo como funciona :)
+STATICFILES_DIRS = [
+    BASE_DIR / "base_static",
+]
+
+# caminho dos arquivos estáticos para deploy
+# é boa prática usar namespace
+STATIC_ROOT = BASE_DIR / "static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
