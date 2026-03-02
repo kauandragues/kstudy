@@ -234,3 +234,14 @@ h6 {
 .principal-rodape a:hover {
     filter: brightness(.8);
 }
+
+.principal-conteudo-detalhe .materia-lista-item {
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+.principal-conteudo-detalhe .materia:hover {
+    transform: scale(1);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
