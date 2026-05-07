@@ -9,7 +9,4 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = [
-    "ruff>=0.15.12",
-    "zuban>=0.7.2",
-]
+dev = []

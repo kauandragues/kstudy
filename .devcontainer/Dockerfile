@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Instala o uv (binários oficiais)
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
-# Instala dependências essenciais de sistema e SSH (necessário para o DevPod)
+# Instala dependências essenciais de sistema e SSH
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     git \
