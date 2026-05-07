@@ -7,3 +7,9 @@ requires-python = ">=3.13"
 dependencies = [
     "django>=6.0.2",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.12",
+    "zuban>=0.7.2",
+]

@@ -1,0 +1,25 @@
+{
+    "name": "Python UV + Zuban + Ruff",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+
+    // Configurações para o DevPod/Zed
+    "remoteUser": "dev",
+    "forwardPorts": [8080],
+
+    // Inicializa o projeto, venv e instala ruff/zuban como dev-dependencies
+    // Nota: O uv init cria o pyproject.toml se ele não existir
+    "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder} && if [ ! -f pyproject.toml ]; then uv init --no-workspace; fi && uv venv && uv add --dev ruff zuban && uv sync",
+
+    "customizations": {
+        "zed": {
+            "interpreter": ".venv/bin/python",
+            "lsp": {
+                "ruff": {
+                    "binary": "ruff"
+                }
+            }
+        }
+    }
+}
